@@ -1,58 +1,54 @@
 package projectCode20280;
 
+import java.util.LinkedList;
+
 public class LinkedDeque<E> implements Deque<E> {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    public static void main(String[] args) {
+        LinkedDeque<Integer> ass= new LinkedDeque<Integer>();
+        ass.addFirst(10);
+    }
+    LinkedDeque<E> lDeque = new LinkedDeque<>();
+    @Override
+    public int size() {
+        return lDeque.size();
+    }
 
-	}
+    @Override
+    public boolean isEmpty() {
+        return lDeque.isEmpty();
+    }
 
-	@Override
-	public int size() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+    @Override
+    public E first() {
+        return lDeque.first();
+    }
 
-	@Override
-	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
-	}
+    @Override
+    public E last() {
+        return lDeque.last();
+    }
 
-	@Override
-	public E first() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Override
+    public void addFirst(E e) {
+        lDeque.addFirst(e);
 
-	@Override
-	public E last() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    }
 
-	@Override
-	public void addFirst(E e) {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    public void addLast(E e) {
+        lDeque.addLast(e);
 
-	@Override
-	public void addLast(E e) {
-		// TODO Auto-generated method stub
-		
-	}
+    }
 
-	@Override
-	public E removeFirst() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Override
+    public E removeFirst() {
+        return lDeque.removeFirst();
+    }
 
-	@Override
-	public E removeLast() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Override
+    public E removeLast() {
+        return lDeque.removeLast();
+    }
 
 }

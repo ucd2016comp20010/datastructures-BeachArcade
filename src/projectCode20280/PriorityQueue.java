@@ -1,6 +1,4 @@
 package projectCode20280;
-
-
 /**
  * Interface for the priority queue ADT.
  */

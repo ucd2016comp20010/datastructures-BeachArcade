@@ -1,5 +1,4 @@
 package projectCode20280;
-
 public interface Queue<E> {
 	/**
 	 * Returns the number of elements in the queue.
@@ -27,7 +26,7 @@ public interface Queue<E> {
 	 * 
 	 * @return the first element of the queue (or null if empty)
 	 */
-	E first();
+	E first() throws Exception;
 
 	/**
 	 * Removes and returns the first element of the queue.

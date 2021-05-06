@@ -1,5 +1,4 @@
 package projectCode20280;
-
 public interface Deque<E> {
 
 	/**

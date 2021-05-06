@@ -1,5 +1,4 @@
 package projectCode20280;
-
 /**
  * An interface for a position which is an abstraction for the
  * location at which a single element is stored in a positional

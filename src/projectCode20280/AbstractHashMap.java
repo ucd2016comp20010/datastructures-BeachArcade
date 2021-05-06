@@ -1,6 +1,5 @@
 package projectCode20280;
 
-import java.util.ArrayList;
 import java.util.Random;
 
 /**
@@ -46,8 +45,8 @@ public abstract class AbstractHashMap<K, V> extends AbstractMap<K, V> {
      * Creates a hash table with capacity 17 and prime factor 109345121.
      */
     public AbstractHashMap() {
-        this(17);
-    }                     // default capacity
+        this(17);  // default capacity
+    }
 
     // public methods
 
@@ -108,15 +107,14 @@ public abstract class AbstractHashMap<K, V> extends AbstractMap<K, V> {
      * Hash function applying MAD method to default hash code.
      */
     private int hashValue(K key) {
-        // TODO
-    	return 0;
+        return (int) ((Math.abs(key.hashCode() * scale + shift) % prime) % capacity);
     }
 
     /**
      * Updates the size of the hash table and rehashes all entries.
      */
     private void resize(int newCap) {
-    	// TODO
+        // TODO
     }
 
     // protected abstract methods to be implemented by subclasses

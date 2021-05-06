@@ -2,39 +2,36 @@ package projectCode20280;
 
 public class LinkedQueue<E> implements Queue<E> {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    private SinglyLinkedList<E> list = new SinglyLinkedList<>();
 
-	}
+    @Override
+    public int size() {
+        return list.size();
+    }
 
-	@Override
-	public int size() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+    @Override
+    public boolean isEmpty() {
+        return list.isEmpty();
+    }
 
-	@Override
-	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
-	}
 
-	@Override
-	public void enqueue(E e) {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    public E first() throws Exception {
+        return list.first();
+    }
 
-	@Override
-	public E first() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Override
+    public E dequeue() {
+        return list.removeFirst();
+    }
 
-	@Override
-	public E dequeue() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Override
+    public void enqueue(E data) {
+        list.addLast(data);
+    }
+
+    public String toString() {
+        return list.toString();
+    }
 
 }

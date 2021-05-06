@@ -1,5 +1,4 @@
 package projectCode20280;
-
 /**
  * Interface for a key-value pair.
  */
